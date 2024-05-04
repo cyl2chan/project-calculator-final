@@ -5,6 +5,20 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+
+    background-color: rgb(192, 230, 255);
+}
+
+.calculator {
+    background: #C2185B;
+    background-image: linear-gradient(to right, rgb(255, 0, 191) , yellow);
+    height: 70vh;
+    padding-top: 30px;
+    border-radius: 10px;;
+    width: 25vw;
+    /*padding-right: 25px;*/
+    padding-left: 25px;
+    box-shadow: 0 10px 10px rgba(17, 1, 241, 0.2);
 }
 
 .btn {
@@ -15,7 +29,7 @@ body {
 }
 
 .number {
-    border: 1px solid green;
+    border: 4px solid rgb(0, 189, 0);
     border-radius: 10px;
 }
 
@@ -24,7 +38,7 @@ body {
 }
 
 .operator {
-    border: 1px solid steelblue;
+    border: 4px solid steelblue;
     border-radius: 10px;
 }
 
@@ -33,7 +47,7 @@ body {
 }
 
 .decimal {
-    border: 1px solid gold;
+    border: 4px solid gold;
     border-radius: 10px;
 }
 
@@ -42,7 +56,7 @@ body {
 }
 
 .equal {
-    border: 1px solid pink;
+    border: 4px solid pink;
     border-radius: 10px;
 }
 
@@ -51,7 +65,7 @@ body {
 }
 
 #clear-btn {
-    border: 1px solid violet;
+    border: 4px solid violet;
     border-radius: 10px;
 }
 
@@ -59,18 +73,28 @@ body {
     background-color: palevioletred;   
 }
 
-.first-row {
+.first-row{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    padding-right: 23px;
+}
+
+.first-row .other-rows {
+    
+    display: flex;
+    gap: 5px;
 }
 
 #screen {
     width: 300px;
-    border: 1px solid salmon;
+    border: 1px solid lightblue;
     height: 75px;
     margin: 15px;
+    padding-right: 15px;
+    background-color: lightblue;
 
     display: flex;
     flex-direction: column;
@@ -85,3 +109,4 @@ body {
 .current {
     font-size: 30px;   
 }
+
